@@ -141,8 +141,7 @@ def main(wwa_fcs, port_fc, dist_unit, out_file):
 
 if __name__ == "__main__":
 
-    # For testing
-
+    # For testing or command line use -- replace values with path to your local data
     wwa_fcs = 'Y:/projects/nmfs_econ2017/data/NWS_WatchWarn/nws_wwa_2001_2017.gdb/wwa_subset_2011_lcc;' \
               'Y:/projects/nmfs_econ2017/data/NWS_WatchWarn/nws_wwa_2001_2017.gdb/wwa_subset_2012_lcc'
     port_fc = 'Y:/projects/nmfs_econ2017/data/NWS_WatchWarn/nws_wwa_2001_2017.gdb/NE_scallop_ports_lcc'

@@ -86,7 +86,6 @@ class WwaToPorts(object):
     def execute(self, parameters, messages):
         """The source code of the tool."""
         import port_wwa_join
-        reload(port_wwa_join)  # Remove this after development
 
         # Input parameter 1:  List of wwa data to associate with port locations
         wwa_fcs = parameters[0].valueAsText  #
