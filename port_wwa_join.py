@@ -113,7 +113,7 @@ def main(wwa_fcs, port_fc, dist_unit, out_file):
         wwa_fc_nm = arcpy.Describe(wwa_fc).name
         port_fc_nm = arcpy.Describe(port_fc).name
         # Output temporary joined feature class in-memory path
-        out_fc = "in_memory/{0}_{1}".format(port_fc_nm, wwa_fc_nm)
+        out_fc = "in_memory/temp_joined"
         msg("Joining {0} to {1}".format(wwa_fc_nm, port_fc_nm))
         # Spatial Join ports with watch/warning data
         arcpy.SpatialJoin_analysis(port_fc, wwa_fc, out_fc, "JOIN_ONE_TO_MANY", "KEEP_COMMON", "#",
